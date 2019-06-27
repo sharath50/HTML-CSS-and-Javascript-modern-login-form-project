@@ -1,0 +1,17 @@
+@mixin import_font($font_name) {
+	$font_name:unquote($font_name);
+	@import url(https://fonts.googleapis.com/css?family=#{$font_name});
+}
+
+@mixin break-1(){
+	@media only screen and (max-width:870px) {
+		@content;
+	}
+}
+
+@mixin break-2(){
+	@media only screen and (max-width:650px) {
+		@content;
+	}
+}
+
